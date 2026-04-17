@@ -44,8 +44,22 @@ print(note[3:7])
 # let's say last 'n' in saravanan we can use -1 
 # as indexing goes for saravanan in minus order like -1 to -9
 name = 'saravanan'
+print(name.upper())
 print(name[-1]) 
 print(len(name))
 example_for_del = [3,4,5,6,7,8]
-del(example_for_del[3:])
+del(example_for_del[3:]) 
+# del() is fn which deletes data from x index to y
 print(example_for_del)
+#Tuple: it's an immutable form of list where we can create a tuple by () or by default multiple values implicitly becomes tuple
+# has .index(value) & .count(value) fn's
+tuple_example = 23,'git','docker','aws',12
+print(tuple_example.index('docker')) # ==> output: 2
+a,b,*c,d = tuple_example
+print(a,b,c,d, sep='\n')
+from  datetime import datetime
+now = datetime.now()
+print(f"Today is {now:%d-%m-%y}")
+#Set: collection of uniqe unordered data every value is stored based on hash value.
+set_example = {23,56,90,3,5,8,23}
+print(set_example)
