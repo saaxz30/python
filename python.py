@@ -63,3 +63,8 @@ print(f"Today is {now:%d-%m-%y}")
 #Set: collection of uniqe unordered data every value is stored based on hash value.
 set_example = {23,56,90,3,5,8,23}
 print(set_example)
+# set as mathametical fn we can make union,inersection
+set1 = {"a,b,c,d h,k,e,o"}
+set2 = {"b,c,m,j,h,u,i,t"}
+print(set1-set2)
+print(set1|set2 ,'\n', set1&set2,'\n' , set1^set2)
