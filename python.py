@@ -51,7 +51,8 @@ example_for_del = [3,4,5,6,7,8]
 del(example_for_del[3:]) 
 # del() is fn which deletes data from x index to y
 print(example_for_del)
-#Tuple: it's an immutable form of list where we can create a tuple by () or by default multiple values implicitly becomes tuple
+#Tuple: it's an immutable form of list where we can create a tuple by () or by default 
+# multiple values implicitly becomes tuple which is called as packing.
 # has .index(value) & .count(value) fn's
 tuple_example = 23,'git','docker','aws',12
 print(tuple_example.index('docker')) # ==> output: 2
@@ -64,7 +65,40 @@ print(f"Today is {now:%d-%m-%y}")
 set_example = {23,56,90,3,5,8,23}
 print(set_example)
 # set as mathametical fn we can make union,inersection
-set1 = {"a,b,c,d h,k,e,o"}
-set2 = {"b,c,m,j,h,u,i,t"}
+set1 = set("a,b,c,d h,k,e,o")
+set2 = set("b,c,m,j,h,u,i,t")
 print(set1-set2)
-print(set1|set2 ,'\n', set1&set2,'\n' , set1^set2)
+print(set1|set2 ,'\n', set1&set2 ,'\n' , set1^set2)
+# | --> like union all , & --> like intersection , -(minus) --> like differntial values
+
+#Dictionary: A key - value pair data structure eg: dict = {x:y} where x is the key and y is value 
+dictionary = {'sara':23,'nive':21}
+#print(dictionary.items())
+items = dictionary.items()
+print(items)
+# while a key is not fetchable we can pass default value.
+print(dictionary.get('sri','not found'))
+# keys and values matching
+keys = ['sara','nive','sri']
+values = [23,21,18]
+d = dict(zip(keys,values))
+print(d)
+# variables are container object with specific values and the same obj may have 
+# multiple ref variables 
+a = 5  
+b = 6 
+def checking_id():
+    if (id(a) == id(b)):
+        print('They are referencing same object')
+    else:print('No they are different object')
+checking_id()
+        
+print(id(a),id(b)) #here; id of a = id of b.
+# python also haves garbage collection like java where it cleans up the object's
+# which are not being refered 
+type(a) # fn for finding the type of an obj
+# to do type convertion we use fn like int(),float(),double()...
+#Range: used for creating an range with G:F = range(n,n-1,i)
+#where;n --> starting point ,n-1 --> ends here , i - iterable steps it follows.
+print(list(range(1,11)))
+
