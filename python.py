@@ -48,6 +48,7 @@ print(name.upper())
 print(name[-1]) 
 print(len(name))
 example_for_del = [3,4,5,6,7,8]
+# print(list(example_for_del))
 del(example_for_del[3:]) 
 # del() is fn which deletes data from x index to y
 print(example_for_del)
@@ -101,4 +102,3 @@ type(a) # fn for finding the type of an obj
 #Range: used for creating an range with G:F = range(n,n-1,i)
 #where;n --> starting point ,n-1 --> ends here , i - iterable steps it follows.
 print(list(range(1,11)))
-
