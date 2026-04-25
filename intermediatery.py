@@ -12,7 +12,7 @@ def adding_records():
         values = int(input("enter age :"))
        #dictn.update({key:values})
         dictn[key] = values
-        i +=1
+        i += 1
     print(dictn)
 adding_records() 
 d1 = {}
@@ -30,4 +30,4 @@ for name, grade in students:
         group[grade] = []   # create list
 
     group[grade].append(name)  # add to list
-print(group)    
+print(group)     

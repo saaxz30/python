@@ -77,6 +77,8 @@ if len(name)>=5:
 else:
     print(name + str(len(name)))
 
+naam = input("Enter your name to be reversed :")
+
 def reverse(name: str):
     for x in range(len(name)-1,-1,-1):
         print(name[x],end="")
@@ -89,5 +91,6 @@ def reverse(name: str):
 seconds = int(input("enter the delay u want :"))
 sleep_example()"""
 
-reverse('saravanan')
+reverse(naam)
+
 
