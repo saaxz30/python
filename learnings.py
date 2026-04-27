@@ -70,6 +70,8 @@ for y in range(0,11):
     if y%3 == 0:
         continue
     print(y)
+for n in range(10):
+    pass # to pass the loop from skiping errors and can be used for future logic implementation
 name = input('type ur name :')
 if len(name)>=5:
     mask = name[2:len(name)-2]

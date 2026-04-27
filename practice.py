@@ -57,7 +57,7 @@ def Validation():
                 n += 1
         elif n == 3:   
             print("you are out of max limit:3")         
-Validation()
+# Validation()
 
 def sampleFor_args(*args): # to get multiple argumental values
     print(args)
@@ -68,8 +68,16 @@ def sampleFor_kargs(**kwargs):
     for key,values in kwargs.items():
         print(f"{key}:{values}")
 
-k = input('enter the key here :')
-v = input('enter the value here :')        
-sampleFor_kargs(k = v)
+# k = input('enter the key here :')
+# v = input('enter the value here :')        
+# sampleFor_kargs(sara = 24,nive = 21)
     
+'''Heigher order function'''
+def reciever(valid):
+    return valid() # where we pass an fn as an argument is called HOF.
+# reciever(Validation)
 
+'''Anonymous function using lambda'''
+trail = lambda x=[] : x
+res = trail([2,5,7,8])
+print(res)
