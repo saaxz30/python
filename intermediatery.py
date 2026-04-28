@@ -44,4 +44,4 @@ n = int(input("No:Of:Data you want to enter :"))
 
 for x in range(n):
     arr.append(int(input("enter data :")))
-print(arr.tolist())    
+print(len(arr.tolist())-2)    
