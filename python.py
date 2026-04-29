@@ -73,7 +73,7 @@ print(set1|set2 ,'\n', set1&set2 ,'\n' , set1^set2)
 # | --> like union all , & --> like intersection , -(minus) --> like differntial values
 
 #Dictionary: A key - value pair data structure eg: dict = {x:y} where x is the key and y is value 
-dictionary = {'sara':23,'nive':21}
+dictionary = {'sara':(23,33),'nive':21}
 #print(dictionary.items())
 items = dictionary.items()
 print(items)
@@ -102,3 +102,4 @@ type(a) # fn for finding the type of an obj
 #Range: used for creating an range with G:F = range(n,n-1,i)
 #where;n --> starting point ,n-1 --> ends here , i - iterable steps it follows.
 print(list(range(1,11)))
+
