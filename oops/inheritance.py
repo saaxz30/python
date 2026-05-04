@@ -16,9 +16,10 @@ class C(B):
 obj2 = C()
 obj2.f1()
 '---------------multiple inheritance------------'
-class D(C,B,A):   #TypeError: Cannot create a consistent method resolution order (MRO) for bases A, B, C
+class D(C,B,A):   #TypeError: Cannot create a consistent 'method resolution order'(MRO) for bases A, B, C
     def __init__(self):
-        super().__init__()
+        super().__init__() 
+        # super() is used to call the methods of the parent class in side its methods or class
         print('in class D init')
     def f4(self):
         print('in class D')

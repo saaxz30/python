@@ -17,7 +17,8 @@ def decorator(func):
         print(filtered)
         return func
     return wrap
-"""@decorator
+"""
+@decorator
 def first_operation():
     ls = [23,45,12,4,56,98]
     return ls
@@ -25,7 +26,8 @@ def first_operation():
 @decorator
 def second_operation():
     ls2 = [34.5,12.6,39.06,32.12]
-    return ls2"""
+    return ls2
+                """
 def first_operation():
     ls = [23,45,12,4,56,98]
     return ls

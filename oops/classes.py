@@ -7,11 +7,13 @@ class connection:
         
     def make_connection(self, error):
         print(f"connection established :{self.url}//staus code :{self.code} ErrorType :{error}")
+    
 
 con1 = connection("https//photoshield.io","200:ok")
 con2 = connection("https//photoshield.io","404:server not found")
 con1.make_connection("No Error") # --> connection.make_connection(con1) [internal working]
 con2.make_connection("No connection establised")
+print(con1.make_connection("hii"))
 
 '-------------------Class Method---------------------'
 # to work with class variables we craete class methods

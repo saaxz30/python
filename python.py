@@ -102,4 +102,11 @@ type(a) # fn for finding the type of an obj
 #Range: used for creating an range with G:F = range(n,n-1,i)
 #where;n --> starting point ,n-1 --> ends here , i - iterable steps it follows.
 print(list(range(1,11)))
-
+"""
+The module is an file which can be imported into another file for using its functions 
+within the package and if the module is outside of the scope of the module then we need to 
+import it with package name i,e: from package.module import *
+"""
+# And to make the block for execution of fn called in the same file in an imported file 
+# We can use if(condition) like if __name__ == "__main__": and we can call those fn inside the
+# If block to make it executable only when the actual file is runned.

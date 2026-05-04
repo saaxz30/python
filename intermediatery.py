@@ -18,7 +18,7 @@ def adding_records():
 # adding_records() 
 d1 = {}
 d1.update(dictn)
-"""
+
 students = [
     ("Sam", "A"),
     ("John", "B"),
@@ -31,7 +31,7 @@ for name, grade in students:
         group[grade] = []   # create list
     
     group[grade].append(name)  # add to list
-print(group)     """
+print(group)     
 #  array's are the form of list but with same data type and they are mutable aswell.
 arr1 = array('i',[33,5,89,78,20])
 arr2 = arr1
@@ -44,4 +44,4 @@ n = int(input("No:Of:Data you want to enter :"))
 
 for x in range(n):
     arr.append(int(input("enter data :")))
-print(len(arr.tolist())-2)    
+print(arr.tolist())    
