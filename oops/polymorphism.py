@@ -23,8 +23,8 @@ class courier:
         self.name = name
         self.state = state
         self.pincode = pincode
-    #def __str__(self):
-     #   return f"{self.name}:{self.state}:{self.pincode}"
+    def __str__(self):  #overrided
+        return f"{self.name}:{self.state}:{self.pincode}"
     
     def fromaddress(self):
         return f"From : {self.name},{self.state}--{self.pincode}"
@@ -33,8 +33,22 @@ class courier:
         return f"To : {self.name},{self.state}--{self.pincode}"
     
 obj = courier('sara','TN',1006087)
-print(obj.__str__())
+print(obj.__str__())   #---> '<__main__.courier object at 0x0000024FDFB88AD0>'
+# overridding this default method is called method overridding
 print(obj.toaddress())
 obj2 = courier('Nive','JK',608704)
 print(obj2)
 '<|||--------------------------------------------------------------------------|||>'
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+def make_sound(animal):
+    animal.sound()
+
+make_sound(Dog())
+make_sound(Cat())

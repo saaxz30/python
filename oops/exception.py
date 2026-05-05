@@ -16,11 +16,10 @@ for i in range(0,3):
     dict = {name:age}
     data.append(dict)
 print(data)
-
+'Finally block'
 try:
-    connect('https//xyz.com')
+    connect('https//xyz.com',"200:ok")  #TypeError: connect() missing 1 required positional argument: 'code'
 finally:
     print('connection closed successfully')
-
-'Finally block'
 # Used to close resources even if the app crash it is safest way to close anything.
+# Even if the code fails finally will be executed.

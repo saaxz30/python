@@ -4,7 +4,9 @@
 # And abstract method can't be defined
 'How do we implement it?'
 # By inheriting ABC class and by decorating it with @abstractmethod
-
+'Why abstarction?'
+# By abstarction we can make std implemention methods which should be definitely implemented
+# So that there will no confusion btw the default std requirements
 from abc import ABC,abstractmethod
 
 class payment_gateway(ABC):
@@ -15,7 +17,8 @@ class razorpay(payment_gateway):
     def pay(self):
         print("paying using razorpay")
 class stipe(payment_gateway):
-    def pe(self):
+    def pay(self):   
+ #TypeError: Can't instantiate abstract class stipe without an implementation for abstract method 'pay'
         print("paying using sripe")
 
 class purchase:
@@ -27,7 +30,7 @@ class purchase:
         print("checking out...")
         self.gateway.pay()
 
-gateway = stipe()
+gateway = stipe() # razorpay() 'loose coupling by implemneting abstarction'
 purchases = purchase(gateway) 
 
 purchases.checkout()
