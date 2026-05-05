@@ -3,10 +3,12 @@ def sara(func):
     return func()
 def nive():
     return 'It\'s nive'
-print(sara(nive))
+# print(sara(nive)) # passing the fn as an argument. 
 
-assinging = nive
-print(assinging)
+res = f"{sara(nive)} \n inside result for fn returned storage" # where the value which is returned by the fn is stored
+print(res)
+assigning = nive  # fn is assigned to an variable which can be also celled as an fn.
+print(assigning()) 
 
 
 class demo:
@@ -21,4 +23,9 @@ class demo:
 
 obj = demo()
 print(demo.example(obj,35,89))
-print(obj.example(76,56)) 
+print(obj.example(76,56))
+
+class phone:
+    pass
+obj2 = phone()
+print(obj2)

@@ -24,4 +24,4 @@ class D(C,B,A):   #TypeError: Cannot create a consistent 'method resolution orde
     def f4(self):
         print('in class D')
 obj3 = D()
-B.f2(obj3)
+D.f2(obj3)
