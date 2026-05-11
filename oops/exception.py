@@ -12,9 +12,10 @@ for i in range(0,3):
         age = int(input("enter your age :"))
     except Exception as e:
         print("please enter an integer :",e)
+        dict = {name:age}
+        data.append(dict)
         continue
-    dict = {name:age}
-    data.append(dict)
+    
 print(data)
 'Finally block'
 try:

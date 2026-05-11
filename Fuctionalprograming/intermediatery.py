@@ -32,6 +32,7 @@ for name, grade in students:
     
     group[grade].append(name)  # add to list
 print(group)     
+'------------------------Array-----------------------------------'
 #  array's are the form of list but with same data type and they are mutable aswell.
 arr1 = array('i',[33,5,89,78,20])
 arr2 = arr1

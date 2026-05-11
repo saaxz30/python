@@ -23,10 +23,17 @@ class courier:
         self.name = name
         self.state = state
         self.pincode = pincode
-    def __str__(self):  #overrided
+    def __str__(self):  #overrided 
         return f"{self.name}:{self.state}:{self.pincode}"
-    
+    '---------------------------overriding----------------------------------'
+    # overriding is like where the method is overrided with diff functionality 
+    # which is having same the names
     def fromaddress(self):
+        return f"From : {self.name},{self.state}--{self.pincode}"
+    
+    def fromaddress(self,name:str,pincode:int):
+        self.name = name
+        self.pincode = pincode
         return f"From : {self.name},{self.state}--{self.pincode}"
     
     def toaddress(self):
@@ -36,6 +43,10 @@ obj = courier('sara','TN',1006087)
 print(obj.__str__())   #---> '<__main__.courier object at 0x0000024FDFB88AD0>'
 # overridding this default method is called method overridding
 print(obj.toaddress())
+try:
+    print(obj.fromaddress())
+except Exception as e:
+    print(e)
 obj2 = courier('Nive','JK',608704)
 print(obj2)
 '<|||--------------------------------------------------------------------------|||>'
